@@ -6,8 +6,7 @@ and saves a clean structured JSON inventory to data/iam_inventory.json.
 
 This is the foundation dataset that later scripts (CloudTrail usage cross-
 reference, risk scoring, policy generation) will build on top of.
-Usage:
-    python scripts/inventory_iam_roles.py
+Usage:python scripts/inventory_iam_roles.py
 """
 
 import boto3
