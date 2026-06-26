@@ -6,8 +6,8 @@ __pycache__/
 .aws/
 *.json.bak
 .vscode/
-data/iam_inventory.json
-data/*.json
+.claude/
+data/
 credentials
 *.pem
 *.key

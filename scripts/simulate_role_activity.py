@@ -14,7 +14,7 @@ import boto3
 import json
 import time
 
-ACCOUNT_ID = "385864241096"
+ACCOUNT_ID = boto3.client("sts").get_caller_identity()["Account"]
 
 # Each entry: (role_name, list of call functions to run as that role)
 # Dormant roles are omitted on purpose.

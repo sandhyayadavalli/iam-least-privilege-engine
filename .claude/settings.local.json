@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(git -C /c/Users/yadav/iam-least-privilege-engine branch -a)"
-    ]
-  }
-}
