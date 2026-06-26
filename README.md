@@ -9,6 +9,19 @@ A CloudTrail-driven tool that automatically identifies overprivileged IAM roles,
 
 ---
 
+## Dashboard
+
+![Overview](screenshot/dashboard_overview.png)
+*KPI cards, risk score bar chart, and risk distribution donut — all filterable by risk level, role name, and dormancy*
+
+![Risk Factors](screenshot/dashboard-risk-factors.png)
+*"What's Driving the Risk" — stacked breakdown of wildcard, sensitive action, unused, and dormancy scores per role*
+
+![Role Detail](screenshot/dashboard-role-detail.png)
+*Per-role detail: used actions (seen in CloudTrail), wildcard grants, and the proposed least-privilege policy*
+
+---
+
 ## The Problem
 
 AWS IAM roles are routinely over-provisioned. Teams grant broad permissions to move fast and rarely audit what's actually being used. The result: roles with `iam:*` or `s3:*` wildcards sitting in production, most permissions never touched — a silent blast radius waiting to be exploited.
