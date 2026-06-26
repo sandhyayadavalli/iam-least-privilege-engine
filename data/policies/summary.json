@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-06-26T05:52:11.659270+00:00",
+  "roles": [
+    {
+      "role_name": "role-wildcard-admin",
+      "role_arn": "arn:aws:iam::385864241096:role/role-wildcard-admin",
+      "risk_level": "HIGH",
+      "risk_score": 60,
+      "granted_action_count": 1,
+      "used_action_count": 18,
+      "reduction_pct": 99.0,
+      "is_dormant": false,
+      "note": "Had wildcard grants ['*'] \u2014 reduced to 18 specific actions",
+      "policy_file": "data/policies/role-wildcard-admin.json"
+    },
+    {
+      "role_name": "role-sensitive-iam-star",
+      "role_arn": "arn:aws:iam::385864241096:role/role-sensitive-iam-star",
+      "risk_level": "HIGH",
+      "risk_score": 55,
+      "granted_action_count": 1,
+      "used_action_count": 6,
+      "reduction_pct": 99.0,
+      "is_dormant": false,
+      "note": "Had wildcard grants ['iam:*'] \u2014 reduced to 6 specific actions",
+      "policy_file": "data/policies/role-sensitive-iam-star.json"
+    },
+    {
+      "role_name": "role-dormant-iam",
+      "role_arn": "arn:aws:iam::385864241096:role/role-dormant-iam",
+      "risk_level": "MEDIUM",
+      "risk_score": 40,
+      "granted_action_count": 2,
+      "used_action_count": 0,
+      "reduction_pct": 100.0,
+      "is_dormant": true,
+      "note": "Reduced from 2 granted to 0 used actions",
+      "policy_file": "data/policies/role-dormant-iam.json"
+    },
+    {
+      "role_name": "role-dormant-unused",
+      "role_arn": "arn:aws:iam::385864241096:role/role-dormant-unused",
+      "risk_level": "MEDIUM",
+      "risk_score": 40,
+      "granted_action_count": 2,
+      "used_action_count": 0,
+      "reduction_pct": 100.0,
+      "is_dormant": true,
+      "note": "Reduced from 2 granted to 0 used actions",
+      "policy_file": "data/policies/role-dormant-unused.json"
+    },
+    {
+      "role_name": "role-cross-account-sts",
+      "role_arn": "arn:aws:iam::385864241096:role/role-cross-account-sts",
+      "risk_level": "MEDIUM",
+      "risk_score": 30,
+      "granted_action_count": 1,
+      "used_action_count": 2,
+      "reduction_pct": -100.0,
+      "is_dormant": false,
+      "note": "Reduced from 1 granted to 2 used actions",
+      "policy_file": "data/policies/role-cross-account-sts.json"
+    },
+    {
+      "role_name": "role-overprivileged-ec2",
+      "role_arn": "arn:aws:iam::385864241096:role/role-overprivileged-ec2",
+      "risk_level": "LOW",
+      "risk_score": 20,
+      "granted_action_count": 1,
+      "used_action_count": 8,
+      "reduction_pct": 99.0,
+      "is_dormant": false,
+      "note": "Had wildcard grants ['ec2:*'] \u2014 reduced to 8 specific actions",
+      "policy_file": "data/policies/role-overprivileged-ec2.json"
+    },
+    {
+      "role_name": "role-s3-wildcard",
+      "role_arn": "arn:aws:iam::385864241096:role/role-s3-wildcard",
+      "risk_level": "LOW",
+      "risk_score": 20,
+      "granted_action_count": 1,
+      "used_action_count": 2,
+      "reduction_pct": 99.0,
+      "is_dormant": false,
+      "note": "Had wildcard grants ['s3:*'] \u2014 reduced to 2 specific actions",
+      "policy_file": "data/policies/role-s3-wildcard.json"
+    },
+    {
+      "role_name": "role-tight-scoped",
+      "role_arn": "arn:aws:iam::385864241096:role/role-tight-scoped",
+      "risk_level": "LOW",
+      "risk_score": 20,
+      "granted_action_count": 1,
+      "used_action_count": 1,
+      "reduction_pct": 0.0,
+      "is_dormant": false,
+      "note": "Reduced from 1 granted to 1 used actions",
+      "policy_file": "data/policies/role-tight-scoped.json"
+    }
+  ]
+}

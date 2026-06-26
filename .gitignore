@@ -1,7 +1,13 @@
 venv/
+venv_wsl/
 .env
 *.pyc
 __pycache__/
 .aws/
 *.json.bak
 .vscode/
+data/iam_inventory.json
+data/*.json
+credentials
+*.pem
+*.key

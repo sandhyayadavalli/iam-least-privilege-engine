@@ -1,15 +1,12 @@
 """
 inventory_iam_roles.py
-
 Week 1 deliverable: pulls every IAM role in the account, along with all
 inline and attached managed policies, parses out the granted permissions,
 and saves a clean structured JSON inventory to data/iam_inventory.json.
 
 This is the foundation dataset that later scripts (CloudTrail usage cross-
 reference, risk scoring, policy generation) will build on top of.
-
-Usage:
-    python scripts/inventory_iam_roles.py
+Usage:python scripts/inventory_iam_roles.py
 """
 
 import boto3

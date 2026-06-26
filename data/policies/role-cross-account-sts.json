@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowStsUsedActions",
+      "Effect": "Allow",
+      "Action": [
+        "sts:getcalleridentity",
+        "sts:getsessiontoken"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
