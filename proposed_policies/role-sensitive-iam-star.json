@@ -1,0 +1,18 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowIamUsedActions",
+      "Effect": "Allow",
+      "Action": [
+        "iam:createrole",
+        "iam:deleterole",
+        "iam:getaccountsummary",
+        "iam:listpolicies",
+        "iam:listroles",
+        "iam:listusers"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
