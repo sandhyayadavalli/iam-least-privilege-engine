@@ -2,7 +2,6 @@
 ingest_cloudtrail.py
 Week 2: Pull raw CloudTrail events for our test roles and normalize them
 into IAM action format (e.g. GetObject -> s3:GetObject).
-
 Saves: data/cloudtrail_events.json
 Usage: python3 scripts/ingest_cloudtrail.py
 """
